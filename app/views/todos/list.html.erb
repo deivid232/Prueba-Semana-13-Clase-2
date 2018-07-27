@@ -1,20 +1,21 @@
 <div class="row">
-  <h1></h1>
-  <div class="col-md-offset-1 col-md-5">
-    <% @todos.each do |todo| %>
-      <% if todo.completed == true%>
-      <h1> <%= todo.description%> </h1>
-      <p> <%= todo.completed %> </p>
+  <div class="container-fluid well">
+    <div class="col-md-offset-1 col-md-5">
+      <% @todos.each do |todo| %>
+        <% if todo.completed == true%>
+        <h1> <%= todo.description%> </h1>
+        <p> <%= todo.completed %> </p>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
-  <div class="col-md-6">
-    <% @todos.each do |todo| %>
-      <% if todo.completed == false %>
-      <h1> <%= todo.description%> </h1>
-      <p> <%= todo.completed %> </p>
+    </div>
+    <div class="col-md-6">
+      <% @todos.each do |todo| %>
+        <% if todo.completed == false %>
+        <h1> <%= todo.description%> </h1>
+        <p> <%= todo.completed %> </p>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
   </div>
 
 </div>

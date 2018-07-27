@@ -1,18 +1,11 @@
 <div class="row" >
 
-  <div class="col-md-offset-2 col-md-4">
-    <h1>Agregar ToDo</h1>
+  <div class="col-md-offset-1 col-md-5">
       <%= form_with model: @todo, local: true do |f| %>
-          <!-- Es el titulo de title -->
-        <%= f.label :description, "Descripcion" %>
-        <!-- Escribo la info -->
+        <p> <%= f.label :description, "Descripción" %> </p>
         <%= f.text_area :description %>
-        <!-- Es el titulo de content -->
-        <%= f.label :completed, "Si" %>
-        <!-- Escribo la info -->
-        <%= f.check_box :completed %>
-        <!-- Coloca el boton -->
-        <%= f.submit  "Enviar" %>
+        <p> <%= f.label :completed, "Completado" %> <%= f.check_box :completed %></p>
+        <p><%= f.submit  "Enviar" %></p>
     </div>
 </div>
 

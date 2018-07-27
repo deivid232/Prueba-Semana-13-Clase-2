@@ -19,7 +19,7 @@
             <td><%= todo.completed %></td>
             <td><%= link_to "Show", todo %></td>
             <td><%= link_to "Edit", edit_path(todo) %></td>
-            <td><%= link_to "Borrar", todo, method: :delete %></td>
+            <td><%= link_to "Borrar", todo, method: :delete, data: { confirm: 'Are you sure?' }%></td>
             <td><%= link_to "Completed", complete_path(todo),class:"btn btn-warning" %></td>
           </tr>
         <% end %>
