@@ -8,6 +8,11 @@
     <% @todos.each do |todo| %>
     <h1> <%= todo.description%> </h1>
     <p> <%= todo.completed %> </p>
+    <p> <%= link_to "Show", todo %> </p>
+    <p> <%= link_to "Edit", edit_path(todo) %> </p>
+    <p> <%= link_to "Borrar", todo, method: :delete %> </p>
+    <p> <%= link_to "Completed", complete_path(todo) %> </p>
+
     <% end %>
 
   </body>
