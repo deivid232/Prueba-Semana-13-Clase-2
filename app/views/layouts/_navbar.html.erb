@@ -1,17 +1,9 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-inverse navbar-fixed-top">
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <%=  link_to 'index', todos_index_path %>
-      <%= link_to 'Lista', todos_list_path %>
-      <%= link_to 'Nuevo', todos_new_path %>
+      <%= link_to 'Index', todos_path, class:"col-md-4" %>
+      <%= link_to 'List', list_path, class:"col-md-4"%>
+      <%= link_to 'New', todos_new_path, class:"col-md-4"%>
     </div>
   </div>
 </nav>
-
-Crear una vista parcial que contenga un navbar fixed de Bootstrap.
-El navbar debe contener un link a Index, un link a List y un link al
-formulario de creación de nuevo ToDo.
-Cargar la vista parcial en el layout.
-Refactorizar los formularios utilizados en las vistas de creación y edición de un
-ToDo. Se debe crear una vista parcial que contenga el formulario, la cual debe
-ser implementada en ambas vistas.
